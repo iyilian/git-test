@@ -32,3 +32,25 @@ git rm <filename> -f #强制删除
 git mv from to #移动文件、重命名文件
 
 <!-- 分支 -->
+
+git branch #查看当前分支
+git branch <branch name> #创建新的分支
+git branch -d <branch name> #删除分支
+git switch <branch name> #切换分支
+git switch -c <branch name> #创建并切换分支
+git merge <branch name> #合并分支
+
+<!-- 变基 -->
+
+git switch xxx #转到 xxx
+git rebase master #将 xxx 变基到 master
+git switch master #转到 master
+git merge xxx #合并分支
+git branch -d xxx #删除 xxx 分支
+
+<!-- 远程仓库 -->
+
+在 github 中创建 repository
+git remote add origin https://github.com/iyilian/git-test.git #git remote add <remote name> <url>
+git branch -M main #修改分支名称为 main
+git push -u origin main #将代码上传到服务器
